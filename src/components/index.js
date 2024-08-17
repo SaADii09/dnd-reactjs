@@ -4,4 +4,4 @@ import ColumnRight from "./ColumnRight.jsx";
 import Row from "./Row.jsx";
 import DndBox from "./DndBox.jsx";
 
-export { Box, ColumnRight, ColumnLeft, Row, DndBox };
+export { Box, ColumnRight, ColumnLeft, DndBox };
