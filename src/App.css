@@ -1,47 +1,42 @@
 #root {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-.box {
-    height: 200px;
-    width: 200px;
-    position: fixed;
-    background-color: aquamarine;
-    left: 40%;
-    top: 50%;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-.dndbox {
-    height: 100px;
-    width: 100px;
-    color: black;
-    background-color: aquamarine;
-    margin: 2px;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.column {
-    border: dashed white 2px;
-    height: 100vh - 2px;
-    width: 250px;
-    padding: 8px;
-    margin: 2px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.row {
-    border: dashed white 2px;
-    width: 100%;
-
-    display: flex;
-    flex-wrap: nowrap;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.outerDiv {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
